@@ -1,0 +1,232 @@
+$color-white: #fff;
+$color-black: #0e0e0e;
+$color-off-black: #1f1f1f;
+$color-primary: #FF502A;
+$color-primary-dark: #D9542E;
+$color-secondary-light: #2d2094;
+$color-secondary: #231973;
+$color-tertiary: #333333;
+
+.background {
+
+  &--primary {
+    background: $color-primary;
+  }
+
+  &--secondary {
+    background: $color-secondary;
+  }
+
+  &--tertiary {
+    background: $color-tertiary;
+  }
+}
+
+header {
+  height: 100vh;
+  background-image: url("../img/alexander-dummer-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .logo {
+    max-width: 10em;
+  }
+
+  h1 {
+    color: $color-primary;
+    font-size: 5em;
+  }
+}
+
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  &.color {
+
+    &--primary {
+      color: $color-primary;
+    }
+
+    &--dark {
+      color: $color-black;
+    }
+
+    &--light {
+      color: $color-white;
+    }
+  }
+}
+
+p {
+  font-size: 1.3em;
+
+  &.color {
+
+    &--light {
+      color: $color-white;
+    }
+
+    &--dark {
+      color: $color-off-black;
+    }
+  }
+
+  &.small, .small {
+    font-size: .8em;
+  }
+}
+
+button {
+  color: $color-white;
+  background: $color-primary;
+  border-radius: 2em;
+  width: 10em;
+  height: 2em;
+  line-height: 2em;
+  min-width: 120px;
+  transition: .3s all ease-in-out;
+
+  &:hover, &:focus {
+    background: $color-primary-dark;
+  }
+}
+
+.form-container {
+  background: $color-secondary;
+
+  h2, p, label, input {
+    color: $color-white;
+  }
+
+  input, textarea {
+    background: none;
+    border-bottom: 1px solid $color-white;
+  }
+}
+
+.selling-points {
+  background: $color-primary;
+  padding: 3px;
+
+  .selling-point {
+    background: $color-white;
+
+    h3 {
+      font-weight: bold;
+      color: $color-black;
+    }
+
+    p {
+      color: $color-off-black;
+    }
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: $color-primary !important;
+}
+
+.swiper-pagination-bullet {
+  background: $color-white !important;
+  opacity: .7 !important;
+}
+.swiper-pagination-bullet-active {
+  background: $color-primary !important;
+}
+
+.steps {
+  transform: translateY(-30px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translate(-40px, 40px);
+    height: 90%;
+    width: 1px;
+    background: $color-primary;
+  }
+
+  .step {
+
+    &.step-1::before {
+      content: "1";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $color-primary;
+      color: $color-white;
+      font-size: 1.5em;
+      transform: translate(-65px, 40px);
+    }
+
+    &.step-2::before {
+      content: "2";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $color-primary;
+      color: $color-white;
+      font-size: 1.5em;
+      transform: translate(-65px, 40px);
+    }
+
+    &.step-3::before {
+      content: "3";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $color-primary;
+      color: $color-white;
+      font-size: 1.5em;
+      transform: translate(-65px, 40px);
+    }
+  }
+}
+.testimonial {
+  height: 15em;
+  width: 15em;
+
+  p {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.bottom-border {
+  border-bottom: 2px solid;
+
+  &--light {
+    border-color: $color-white;
+  }
+}
+
+.social-icon {
+  background: $color-primary;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  i {
+    font-size: 2em;
+    color: $color-white;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5em;
+  }
+}

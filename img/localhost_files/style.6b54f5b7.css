@@ -1,0 +1,104 @@
+.background--primary {
+  background: #FF502A;
+}
+.background--secondary {
+  background: #231973;
+}
+
+header {
+  height: 100vh;
+  background-image: url("/alexander-dummer-unsplash.6279fcb1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .logo {
+  max-width: 10em;
+}
+header h1 {
+  color: #FF502A;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h1.color--primary, h2.color--primary, h3.color--primary, h4.color--primary, h5.color--primary, h6.color--primary {
+  color: #FF502A;
+}
+h1.color--dark, h2.color--dark, h3.color--dark, h4.color--dark, h5.color--dark, h6.color--dark {
+  color: #0e0e0e;
+}
+h1.color--light, h2.color--light, h3.color--light, h4.color--light, h5.color--light, h6.color--light {
+  color: #fff;
+}
+
+p {
+  font-size: 1.3em;
+}
+p.color--light {
+  color: #fff;
+}
+p.color--dark {
+  color: #1f1f1f;
+}
+
+button {
+  color: #fff;
+  background: #FF502A;
+  border-radius: 2em;
+  width: 10em;
+  height: 2em;
+  line-height: 2em;
+  min-width: 120px;
+  transition: 0.3s all ease-in-out;
+}
+button:hover, button:focus {
+  background: #D9542E;
+}
+
+.form-container {
+  background: #231973;
+}
+.form-container h2, .form-container p, .form-container label, .form-container input {
+  color: #fff;
+}
+.form-container input, .form-container textarea {
+  background: none;
+  border-bottom: 1px solid #fff;
+}
+
+.selling-points {
+  background: #FF502A;
+  padding: 3px;
+}
+.selling-points .selling-point {
+  background: #fff;
+}
+.selling-points .selling-point h3 {
+  font-weight: bold;
+  color: #0e0e0e;
+}
+.selling-points .selling-point p {
+  color: #1f1f1f;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #FF502A !important;
+}
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.7 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FF502A !important;
+}
+
+/*# sourceMappingURL=/style.6b54f5b7.css.map */
